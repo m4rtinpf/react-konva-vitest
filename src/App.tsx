@@ -1,4 +1,5 @@
 import { Stage, Layer, Rect } from "react-konva";
+import { Html } from "react-konva-utils";
 
 function App() {
   return (
@@ -7,6 +8,9 @@ function App() {
     <Stage width={window.innerWidth} height={window.innerHeight}>
         <Layer>
            <Rect x={100} y={100} width={100} height={100} fill='red' />
+           <Html>
+                <p>Howdy</p>
+           </Html>
         </Layer>
     </Stage>
   </>
